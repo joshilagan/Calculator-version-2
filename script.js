@@ -46,7 +46,10 @@ window.addEventListener('keydown', (e) => {
     //catch any error
     window.onerror = function(e) {
         console.log("Error: ", e);
-        input.value = 'ERROR'      
+        input.value = 'ERROR'  
+        while(arr.length > 0){
+            arr.pop()
+            }    
     };  
 
     //create a blink color when the key is pressed
